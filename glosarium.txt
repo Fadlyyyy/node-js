@@ -1,0 +1,188 @@
+node js 
+node js is a javascsript runtime built on chrome's V8 javascript engine
+
+node js adalah javascript runtime yang dibangun / dibuat 
+didalam javascript engine v8 yang dibuat oleh chrome
+
+node js an asynchronous event-driven javscript runtime, designed to build scalable network applications
+
+node js adalah sebuah runtime untuk membuat aplikasi yang asynchronous
+
+apa itu runtime??
+node js bukan bahasa pemrograman
+
+runtime adalah sebuah konteks atau tempat dimana kita menjalankan atau mengeksekusi kode
+
+kelebihan javascript node js :
+v8 bisa untuk memanipulasi node
+bisa untuk eventlistener
+untuk interaktivitas
+untuk https request
+dan lain lain
+
+
+kekurangan :
+terbatas
+javascript bisa melakukan apaun namun hanya didalam browser
+, jika browsernya diclose javascriptnya tidak akan jalan.
+(hanya mengandalkan browser engine v8 tertanam didalam browser)
+
+nodejs diakusisi oleh suatu foundation yang bernama openjs foundation
+
+Ryan dahl - pembuat nodejs
+-2009 membuat nodejs
+-software dev @ Joyent
+-github.com/Ryan
+-ingin membuat web server menggunakan eventloop,
+bukan menggunakan thread.
+-sudah mencoba menggunakan C,Lua,haskell
+-ryan dahl membuat v8 engine agar bisa keluar/dijalankan didalam browser
+-ryan dahl keluar dari node js pada tahun 2012/2013
+-dia membuat teknologi baru yang bernama deno
+
+nodejs bisa apa aja??
+-bisa mengakses memori
+-bisa mengakses i/o
+-bisa melakukan request
+-bisa mengakses file system
+-bisa melakukan aktivitas network
+dll
+
+karakteristik dari node.js
+1. asynchronous & event driven
+2.non-blocking
+3. single thread but highly scalable
+4. cross platform
+5. MIT license
+6.NPM
+
+fitur utama nodejs :
+1.file system (semacam directory)
+2.buffer (ketika kita mengelola binary dari filenya, cocok untuk membuat sebuah aplikasi yang bisa transfer file atau streaming vidieo)
+3.mampu melakukan fitur network (http & https )
+4.REPL (read evaluate print and loop)
+(untuk mengeksekusi program node lewat command line/terminal)
+5.console
+6.crypto 
+7.zlib
+dll
+https://nodejs.org/dist/latest/-v14x/docs.aplikasi
+
+perbandingan antara nodejs dan php :
+php dibuat pada tahun 1994
+nodejs 2009
+
+php menggunakan engine zendengine
+nodejs menggunakan engine google's v8 engine
+
+untuk eksekusi kodenya php menggunakan multi-thread dan synchronous
+kodenya disebut blocking, apabila mengerjakan satu hal akan berjalan sampai selesai dahulu.
+baru mengerjakan hal proses berikutnya
+namun dia adalah multi thread , yang melayaninya lebih dari 1
+
+sedangkan nodejs yang melayaninya hanya 1, namun ia tidak perlu menunggu hingga selesai
+1 proses ia bisa langsung ke proses berikutnya
+
+php menggunakan web server apache atau / iis 
+sedangkan nodejs berjalan diruntime sendiri.
+(hal ini yang membuat proses deployment di nodejs tidak semudah diphp)
+
+php mempunyai package manager yang bernama composer
+nodejs mempunyai package manager yang bernama NPM
+
+nodejs cocok untuk...
+-cocok untuk membuat dynamic single page applications (spa)
+aplikasi yang hanya 1 halaman namun isinya bisa secara dinamis berubah2,
+jadi tidak pindah2 halaman , hanya menggunakan 1 halaman saja
+-cocok untuk realtime APP (chat, multiplayer)
+cocok untuk membuat game yang atau chat
+-API
+-streaming application
+-microservices
+-command line tool
+-MERN,MEAN,MEVN..
+
+preRequisite :
+-javascript dasar
+-javascript lanjutan (modern Js / es6)
+
+
+system & software requirement
+-windows/linux/macOS
+-code editor
+-terminal/command prompt (git bash)
+
+
+javascript berada dalam konteks web browser
+
+tiap-tiap web browser punya engine javascriptnya masing2
+
+chrome
+-v8
+
+mengapa  nodejs memilih v8 sebagai enginenya,karena perilakunya sesuai dengan yang diharapkan oleh pembuatnya,
+dan v8 engine juga termasuk engine yang tercepat. 
+
+mozilla
+-spiderMonkey
+
+microsoft
+-chakra
+
+javascript berjalan didalam web browser dan konteksnya adalah dom
+
+didalam js kita bisa menulis
+
+document.getElementById()
+document.getElementByClassName()
+document.querySelector()
+
+
+begitu v8 engine dikeluarkan oleh node, konteksnya bukan didalam browser lagi,
+nodenya atau enginenya tidak lagi mempunyai akses ke script/api diatas..
+
+koteksnya sudah bukan lagi web browser..
+
+tapi jika kita sudah memakai node,lalu kita ingin mengakses file sistem..
+caranya adalah :
+
+fs.writeFile()
+os.platform()
+http.createServer()
+path.dirname()
+
+cara kerja nodejs :
+-asynchronous (tidak menunggu)
+-non-blocking
+-single thread
+
+multi thread dan synchronous proses ini adalah menunggu hingga 1 proses selesai..
+hal ini tidak dilakukan oleh nodejs
+
+
+REPL (Read-Eval-Print_Loop)
+
+fitur untuk membaca, mengevaluasi,mencetak dan menguilang kembali script dari nodejs
+
+hal ini biasa dilakukan untuk mendebug sesuatu dari script kita..
+hal ini dilakukan ketika ingin tahu sebuah expressi atau sebuah script, benar atau salah..
+untuk mengeksekusi code via command prompt.
+
+bisa menggunakan multi line code..
+
+break dan clear
+digunakan ketika ingin keluar dari multi line coding..
+
+.editor
+digunakan untuk mengedit pada node
+
+
+
+
+
+
+
+
+
+
+

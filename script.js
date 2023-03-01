@@ -26,7 +26,7 @@
 const getUser = (id, cb) => {
     const time = id === 1 ? 3000 : 2000;
     setTimeout(() => {
-        const nama = id === 1 ? 'fardli' : 'yansah';
+        const nama = id  === 1 ? 'fardli' : 'yansah';
         cb({id, nama});
     }, time);
 };
